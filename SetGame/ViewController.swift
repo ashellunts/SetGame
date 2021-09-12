@@ -39,6 +39,7 @@ class ViewController: UIViewController {
 	func updateUI() {
 		for i in vm.cardsOnTable.indices {
 			buttons[i].isHidden = false
+			buttons[i].setTitle(vm.cardsOnTable[i].text, for: .normal)
 
 			if (vm.cardsOnTable[i].isMatched) {
 				buttons[i].alpha = 0.5

@@ -14,10 +14,10 @@ func randomEnum(_ values: [Any]) -> Any {
 
 enum Shape {
 	case circle
-	case squar
+	case square
 	case triangle
 	static func random() -> Shape {
-		return randomEnum([Shape.circle, .squar, .triangle]) as! Shape
+		return randomEnum([Shape.circle, .square, .triangle]) as! Shape
 	}
 }
 
@@ -55,5 +55,9 @@ struct Card {
 					count: Int.random(in: 1...3),
 					color: Color.random(),
 					texture: Texture.random())
+	}
+
+	var text: String {
+		return "fix-me"
 	}
 }
