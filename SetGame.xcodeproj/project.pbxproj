@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194DA4F926EE4DC3002392B5 /* CardsMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194DA4F826EE4DC3002392B5 /* CardsMatching.swift */; };
+		194DA4FB26EE4DD1002392B5 /* CardsMatchingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194DA4FA26EE4DD1002392B5 /* CardsMatchingTest.swift */; };
+		194DA4FD26EE5605002392B5 /* ValuesMatchingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194DA4FC26EE5605002392B5 /* ValuesMatchingTest.swift */; };
 		1978206626AAC30700624E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978206526AAC30700624E75 /* AppDelegate.swift */; };
 		1978206826AAC30700624E75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978206726AAC30700624E75 /* SceneDelegate.swift */; };
 		1978206A26AAC30700624E75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978206926AAC30700624E75 /* ViewController.swift */; };
 		1978206D26AAC30700624E75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978206B26AAC30700624E75 /* Main.storyboard */; };
 		1978206F26AAC30700624E75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1978206E26AAC30700624E75 /* Assets.xcassets */; };
 		1978207226AAC30700624E75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978207026AAC30700624E75 /* LaunchScreen.storyboard */; };
-		1978207D26AAC30700624E75 /* SetGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978207C26AAC30700624E75 /* SetGameTests.swift */; };
+		1978207D26AAC30700624E75 /* SetGameModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978207C26AAC30700624E75 /* SetGameModelTests.swift */; };
 		19965E5F26ECC98F00E5FC0D /* SetGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19965E5E26ECC98F00E5FC0D /* SetGameModel.swift */; };
 		19965E6126ECCA1000E5FC0D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19965E6026ECCA1000E5FC0D /* Card.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		194DA4F826EE4DC3002392B5 /* CardsMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsMatching.swift; sourceTree = "<group>"; };
+		194DA4FA26EE4DD1002392B5 /* CardsMatchingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsMatchingTest.swift; sourceTree = "<group>"; };
+		194DA4FC26EE5605002392B5 /* ValuesMatchingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuesMatchingTest.swift; sourceTree = "<group>"; };
 		1978206226AAC30700624E75 /* SetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1978206526AAC30700624E75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1978206726AAC30700624E75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +44,7 @@
 		1978207126AAC30700624E75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1978207326AAC30700624E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1978207826AAC30700624E75 /* SetGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1978207C26AAC30700624E75 /* SetGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameTests.swift; sourceTree = "<group>"; };
+		1978207C26AAC30700624E75 /* SetGameModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameModelTests.swift; sourceTree = "<group>"; };
 		1978207E26AAC30700624E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19965E5E26ECC98F00E5FC0D /* SetGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameModel.swift; sourceTree = "<group>"; };
 		19965E6026ECCA1000E5FC0D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 				1978207326AAC30700624E75 /* Info.plist */,
 				19965E5E26ECC98F00E5FC0D /* SetGameModel.swift */,
 				19965E6026ECCA1000E5FC0D /* Card.swift */,
+				194DA4F826EE4DC3002392B5 /* CardsMatching.swift */,
 			);
 			path = SetGame;
 			sourceTree = "<group>";
@@ -99,8 +106,10 @@
 		1978207B26AAC30700624E75 /* SetGameTests */ = {
 			isa = PBXGroup;
 			children = (
-				1978207C26AAC30700624E75 /* SetGameTests.swift */,
+				1978207C26AAC30700624E75 /* SetGameModelTests.swift */,
 				1978207E26AAC30700624E75 /* Info.plist */,
+				194DA4FA26EE4DD1002392B5 /* CardsMatchingTest.swift */,
+				194DA4FC26EE5605002392B5 /* ValuesMatchingTest.swift */,
 			);
 			path = SetGameTests;
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 			files = (
 				1978206A26AAC30700624E75 /* ViewController.swift in Sources */,
 				1978206626AAC30700624E75 /* AppDelegate.swift in Sources */,
+				194DA4F926EE4DC3002392B5 /* CardsMatching.swift in Sources */,
 				19965E6126ECCA1000E5FC0D /* Card.swift in Sources */,
 				1978206826AAC30700624E75 /* SceneDelegate.swift in Sources */,
 				19965E5F26ECC98F00E5FC0D /* SetGameModel.swift in Sources */,
@@ -217,7 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1978207D26AAC30700624E75 /* SetGameTests.swift in Sources */,
+				194DA4FD26EE5605002392B5 /* ValuesMatchingTest.swift in Sources */,
+				194DA4FB26EE4DD1002392B5 /* CardsMatchingTest.swift in Sources */,
+				1978207D26AAC30700624E75 /* SetGameModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

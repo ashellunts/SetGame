@@ -31,16 +31,26 @@ class SetGameModel {
 		checkMatching()
 	}
 
+	//TODO test
 	private func checkMatching() {
-		if countOfSelectedCardsNotMatched == 3 {
-			for i in cardsOnTable.indices {
-				cardsOnTable[i].isMatched = cardsOnTable[i].isSelected
+		if selectedCardsNotMatched.count != 3 {
+			return
+		}
+
+		if !CardsMatching(selectedCardsNotMatched[0], selectedCardsNotMatched[1], selectedCardsNotMatched[2]) {
+			return
+		}
+
+		for i in cardsOnTable.indices {
+			if (cardsOnTable[i].isSelected && !cardsOnTable[i].isMatched)
+			{
+				cardsOnTable[i].isMatched = true
 			}
 		}
 	}
 
-	private var countOfSelectedCardsNotMatched: Int {
-		return cardsOnTable.filter{ $0.isSelected && !$0.isMatched }.count
+	private var selectedCardsNotMatched: [Card] {
+		return cardsOnTable.filter{ $0.isSelected && !$0.isMatched }
 	}
 
 	private func dealMore(_ cards: Int) {
